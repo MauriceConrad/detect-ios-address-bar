@@ -4,7 +4,7 @@
 
 With iOS 15, Apple updated *Mobile Safari* to show the address bar either as a small area on the bottom or, if Safari recognizes some *navigation related user input*, as an overlay over the whole web page. This becomes a problem when web app's using a mobile layout that uses the bottom of your screen as a tab bar for example. That's because a *navigation related user input* is not just triggered by clicking on the small address bar area on the bottom (which seems to be a real navigation intention) but also when the user scrolls up.
 
-![Problem Demo](https://github.com/MauriceConrad/detect-ios-address-bar/blob/master/repo_ressources/screenshots.png?raw=true)
+![Problem Demo](https://github.com/MauriceConrad/detect-ios-address-bar/blob/master/repo_ressources/screenshots_3.png?raw=true)
 
 ## Usage
 

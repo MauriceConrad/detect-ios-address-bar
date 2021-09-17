@@ -1,6 +1,6 @@
 {
   "name": "detect-ios-address-bar",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Detect iOS (>= v15) Safari's UI Overlay of the address bar on iPhones to modify your web app's UI if needed",
   "main": "src/main.js",
   "scripts": {

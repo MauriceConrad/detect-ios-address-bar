@@ -16,13 +16,15 @@ const safariAddressBar = new SafariAddressBarDetector();
 
 // Listening for update events
 safariAddressBar.on('update', mode => {
-  console.log(mode); // 'collapsed' or 'overlayed'
+  console.log(mode); // 'collapsed' or 'overlayed' or null if device has
 });
 
 // Get mode immediately
-console.log(safariAddressBar.mode); // 'collapsed' or 'overlayed'
+console.log(safariAddressBar.mode); // 'collapsed' or 'overlayed' or null
 
 ```
+
+If the device is not a targeted device (Mobile Safari >= iOS 15 on iPhone or iPod Touch), the `mode` will be `null`
 
 ### Destroy
 
@@ -34,7 +36,7 @@ safariAddressBar.destroy();
 
 ## Modes
 
-Currently (September of 2021) there are two modes we want to recognize on iPhones (and theoretically the iPod Touch 7th) running Mobile Safari on iOS >= 15, there are just two modes:
+Currently (September of 2021) there are two modes we want to recognize on iPhones (and theoretically the iPod Touch 7th) running Mobile Safari on iOS >= 15:
 
 - `collapsed`: When the address bar is this small hint area on the bottom
 - `overlayed`: When the address overlays the bottom of the screen while the web page viewport lies under the address bar

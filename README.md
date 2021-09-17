@@ -6,6 +6,13 @@ With iOS 15, Apple updated *Mobile Safari* to show the address bar either as a s
 
 ![Problem Demo](https://github.com/MauriceConrad/detect-ios-address-bar/blob/master/repo_ressources/screenshots_3.png?raw=true)
 
+## Installation
+
+```bash
+npm install detect-ios-address-bar
+
+```
+
 ## Usage
 
 ```javascript

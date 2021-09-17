@@ -6,6 +6,7 @@ import situations from './model/situations.js'
 export default class iOSUIOverlayDetector extends Emitter {
   constructor(interval = 50) {
     super();
+    this.__behaviourDedtected = false;
     this.__static_mode = null;
     this.browser = detect();
 
@@ -18,6 +19,7 @@ export default class iOSUIOverlayDetector extends Emitter {
     this.applyMode = () => {
       if (this.__static_mode != this.mode) {
         this.updateStaticMode();
+        this.__behaviourDedtected = true;
         this.emit('update', this.mode);
       }
     }
@@ -35,6 +37,9 @@ export default class iOSUIOverlayDetector extends Emitter {
   get mode() {
     if (this.isTargetDevice && this.situation && !window.navigator.standalone) {
       return this.situation.mode;
+    }
+    else if (this.__behaviourDedtected) {
+      return this.__static_mode;
     }
     else {
       return null;

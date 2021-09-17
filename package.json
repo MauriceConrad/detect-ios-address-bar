@@ -1,6 +1,6 @@
 {
   "name": "detect-ios-address-bar",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Detect iOS (>= v15) Safari's UI Overlay of the address bar on iPhones to modify your web app's UI if needed",
   "main": "src/main.js",
   "scripts": {
@@ -42,6 +42,7 @@
     "@babel/core": "^7.15.5",
     "@babel/preset-env": "^7.15.6",
     "babel-loader": "^8.2.2",
+    "eslint": "^7.32.0",
     "lodash": "^4.17.21",
     "npm-watch": "^0.11.0",
     "webpack": "^5.53.0",

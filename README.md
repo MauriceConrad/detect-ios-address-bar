@@ -47,3 +47,8 @@ Currently (September of 2021) there are two modes we want to recognize on iPhone
 
 - `collapsed`: When the address bar is this small hint area on the bottom
 - `overlayed`: When the address overlays the bottom of the screen while the web page viewport lies under the address bar
+
+
+## Bugs
+
+Sadly, there is **one** major bug: If the user scrolls down within the `<body>` of the page (global scroll) and the maximum scroll position is reached closely to *20px*, there is no way to recognize the address bar mode anymore. This seems to be not a real problem because most apps that are offering fixed UI elements on the bottom of the screen, such as a tab bar, do not have a global scroll because they are offering an app layout. But if you're running into this issue, the best solution would be to create 20-40px space to the bottom of the page, so there is nothing that could be overlayed when the user scrolls down to the bottom of the page.

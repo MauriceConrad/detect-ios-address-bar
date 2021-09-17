@@ -1,0 +1,54 @@
+{
+  "name": "detect-ios-address-bar",
+  "version": "0.0.1",
+  "description": "Detect iOS (>= v15) Safari's UI Overlay of the address bar on iPhones to modify your web app's UI if needed",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "npx webpack --mode production",
+    "dev": "npx webpack --mode development",
+    "serve": "npm link && npm-watch dev"
+  },
+  "watch": {
+    "dev": {
+      "patterns": [
+        "src",
+        "package.json"
+      ],
+      "extensions": "js,js,vue,css",
+      "legacyWatch": true
+    }
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-optional-chaining",
+      "@babel/plugin-proposal-nullish-coalescing-operator"
+    ]
+  },
+  "keywords": [
+    "ios",
+    "apple",
+    "safari",
+    "address",
+    "bar",
+    "overlay",
+    "behaviour"
+  ],
+  "author": "Maurice Conrad",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "babel-loader": "^8.2.2",
+    "lodash": "^4.17.21",
+    "npm-watch": "^0.11.0",
+    "webpack": "^5.53.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "detect-browser": "^5.2.1",
+    "tiny-emitter": "^2.1.0"
+  }
+}

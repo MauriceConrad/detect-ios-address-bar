@@ -1,6 +1,6 @@
 {
   "name": "detect-ios-address-bar",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Detect iOS (>= v15) Safari's UI Overlay of the address bar on iPhones to modify your web app's UI if needed",
   "main": "src/main.js",
   "scripts": {
@@ -50,5 +50,9 @@
   "dependencies": {
     "detect-browser": "^5.2.1",
     "tiny-emitter": "^2.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MauriceConrad/detect-ios-address-bar.git"
   }
 }
